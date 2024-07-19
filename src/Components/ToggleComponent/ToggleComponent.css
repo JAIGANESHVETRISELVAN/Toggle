@@ -1,0 +1,50 @@
+@keyframes animateBackground {
+    0% {
+      background-color: #85b3d1;
+    }
+    50% {
+      background-color: #a8e91b;
+    }
+    100% {
+      background-color: #09ce51;
+    }
+  }
+  
+  body {
+    animation: animateBackground 10s infinite alternate;
+  }
+  
+  main {
+    display: flex;
+    margin-left: 500px;
+  }
+  
+  .container {
+    margin-top: 10%;
+    border: solid 1px black;
+    padding: 2% 10%;
+    background-color: white;
+    text-align: center; 
+  }
+  
+  button {
+    background-color: #3498DB;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 80%;
+    font-weight: 600;
+    color: white; 
+    padding: 10px 20px; 
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 5% 5%;
+    }
+  
+    button {
+      font-size: 100%;
+    }
+  }
